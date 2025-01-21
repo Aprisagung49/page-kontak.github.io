@@ -1,0 +1,240 @@
+<html>
+ <head>
+  <title>
+   Contact Us - PT Ewindo
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://registry.npmmirror.com/vue/3.3.11/files/dist/vue.global.js">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+   body {
+      font-family: 'Monserrat', sans-serif;
+      font-size: 16px;
+    }
+    /* .p6{
+      z-index: 999;
+    } */
+    a:hover{
+      color: rgb(245, 186, 90);
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-800">git remote add origin https://github.com/Aprisagung49/page-ewindo-contactus.git
+  <div id="app">
+    <!-- header start -->
+    <header class="flex justify-between items-center p-2 bg-white shadow-md z-[999] fixed top-0 left-0 w-full">
+    <div class="text-3xl font-bold px-2 py-1">
+     <img alt="PT Ewindo Logo" src="logo.png"/>
+    </div>
+    <nav class="space-x-6 px-2 py-2">
+     <a class="text-lg" href="#">
+      Company
+     </a>
+     <a class="text-1xl" href="#">
+      Products
+     </a>
+     <a class="text-lg" href="../news/news.html">
+      Newsroom
+     </a>
+     <a class="text-lg" href="../job/job.html">
+      Carrer
+     </a>
+     <a class="text-lg" href="../contact/contactus.html">
+      Contact
+     </a>
+     <a class="text-lg" href="#">
+      <i class="fas fa-globe">
+      </i>
+     </a>
+    </nav>
+   </header>
+   <!-- header End -->
+
+
+    <!-- Hero Image Section Start -->
+   <main class="px-6">
+    <section class="relative text-left py-20">
+      <!-- Gambar -->
+      <div class="relative">
+        <img src="contact.jpg" alt="Contact Us" class="w-full h-auto">
+        <!-- Teks di atas kiri gambar -->
+        <h1 class="absolute top-4 left-4 text-3xl font-bold text-yellow-500 px-2 py-1 rounded shadow-md" style="-webkit-text-stroke: .5px white; color: yellow">
+          Contact Us
+        </h1>
+      </div>
+    </section>
+    <!-- Form Section Start  -->
+    <section class="bg-gray-100 p-8 rounded-lg mb-16">
+     <h2 class=" text-yellow-500 mb-4">
+      Leave Messages
+     </h2>
+     <p class="mb-8">
+      Please include your specific requirements to assist us in providing you with an accurate quotation.
+     </p>
+     <form class="space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+       <select class="border border-gray-300 p-2 rounded">
+        <option>
+         Title
+        </option>
+       </select>
+       <input class="border border-gray-300 p-2 rounded" placeholder="First Name" type="text"/>
+       <input class="border border-gray-300 p-2 rounded" placeholder="Last Name" type="text"/>
+      </div>
+      <input class="w-full border border-gray-300 p-2 rounded" placeholder="Email Address" type="email"/>
+      <input class="w-full border border-gray-300 p-2 rounded" placeholder="Phone Number" type="text"/>
+      <input class="w-full border border-gray-300 p-2 rounded" placeholder="Country" type="text"/>
+      <input class="w-full border border-gray-300 p-2 rounded" placeholder="Subject" type="text"/>
+      <textarea class="w-full border border-gray-300 p-2 rounded h-32" placeholder="Message"></textarea>
+      <div class="flex flex-col items-center justify-center">
+        <button class="bg-yellow-500 text-white px-9 py-2 rounded" type="submit">
+          Submit
+        </button>
+      </div>
+     </form>
+    </section>
+    <!-- Form Section End -->
+    <!--section maps start -->
+    <section class="mb-16">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126749.6605787355!2d107.4980086972656!3d-6.899346999999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7e3329fd20d%3A0x9b4d627819303906!2sPT%20Ewindo!5e0!3m2!1sid!2sid!4v1736908737367!5m2!1sid!2sid" 
+        width="100%" height="400" style="border:0;"
+         allowfullscreen="" loading="lazy" 
+         referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <i class="fas fa-map-marker-alt text-yellow-500 mr-2">
+       </i>
+       <span class="font-bold">
+        PLANT 1
+       </span>
+      <p>
+       Jl. Cimuncang no. 68, Bandung, Jawa Barat, Indonesia.
+       <br/>
+       T +62 22 720 8008
+       <br/>
+       F +62 22 720 7132, 720 6283
+      </p>
+     
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126734.57124324786!2d107.64736409726561!3d-6.955490500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c4fa06ad4a47%3A0x53f1a4efa49afef!2sPT.%20Ewindo!5e0!3m2!1sid!2sid!4v1736908908414!5m2!1sid!2sid"
+       width="100%" height="400" style="border:0;" allowfullscreen=""
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+       <i class="fas fa-map-marker-alt text-yellow-500 mr-2">
+       </i>
+       <span class="font-bold">
+        PLANT 2
+       </span>
+
+      <p>
+       Kawasan Industri Rancaekek Kav. A.8,
+       <br/>
+       Jalan Raya Rancaekek KM 24.5 Sumedang, 45364, Jawa Barat, Indonesia.
+       <br/>
+       T +62 22 778 0008
+       <br/>
+       F +62 22 778 0001
+      </p>
+
+    </section>
+    <!-- section maps end -->
+   </main>
+   <!-- section footer start -->
+   <footer class="border-t border-gray-300 py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+            <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                <div class="mb-6">
+                    <h2 class="text-yellow-600 font-bold">PLANT 1</h2>
+                    <p>Jl. Cimuncang no. 68, Bandung,<br>
+                    Jawa Barat, Indonesia.<br>
+                    T +62 22 720 8008<br>
+                    F +62 22 720 7132, 720 6283</p>
+                </div>
+                <div>
+                    <h2 class="text-yellow-600 font-bold">PLANT 2</h2>
+                    <p>Kawasan Industri Rancaekek Kav. A.8,<br>
+                    Jalan Raya Rancaekek KM 24.5 Sumedang 45364<br>
+                    Jawa Barat, Indonesia.<br>
+                    T +62 22 778 0008<br>
+                    F +62 22 778 0001</p>
+                </div>
+            </div>
+            <div class="w-full md:w-2/3 flex flex-wrap justify-between">
+                <div class="w-1/2 md:w-1/6 mb-6 md:mb-0">
+                    <h3 class="font-bold">Company</h3>
+                    <ul>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">About Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Our Story</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Quality Control & TQA</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Manpower & Training</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Honor Certificates</a></li>
+                    </ul>
+                </div>
+                <div class="w-1/2 md:w-1/6 mb-6 md:mb-0">
+                    <h3 class="font-bold">Products</h3>
+                    <ul>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Our Products</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Credibility</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Customer Review</a></li>
+                    </ul>
+                </div>
+                <div class="w-1/2 md:w-1/6 mb-6 md:mb-0">
+                    <h3 class="font-bold">Newsroom</h3>
+                    <ul>
+                        <li><a href="../news/news.html" class="text-gray-600 hover:text-gray-800">What's New?</a></li>
+                    </ul>
+                </div>
+               
+                <div class="w-1/2 md:w-1/6 mb-6 md:mb-0">
+                    <h3 class="font-bold">Career</h3>
+                    <ul>
+                        <li><a href="../job/job.html" class="text-gray-600 hover:text-gray-800">Join Us</a></li>
+                    </ul>
+                </div>
+                <div class="w-1/2 md:w-1/6 mb-6 md:mb-0">
+                  <h3 class="font-bold">Contact</h3>
+                  <a href="#" class="inline-block bg-yellow-600 text-white py-2 px-4 rounded hover:bg-yellow-700">Contact Us <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 flex justify-between items-center">
+            <p class="text-gray-600">© 2025 PT EWINDO. All Rights Reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Section Footer End -->
+  </div>
+  <script>
+   const { createApp } = Vue;
+    createApp({}).mount('#app');
+  </script>
+ </body>
+</html>
+<!-- <script>
+  // Lokasi yang akan ditandai (latitude, longitude)
+  const ewindo = [-6.899858,107.650542]; 
+
+  // Buat peta
+  const map = L.map('map').setView(ewindo, 10); // Zoom level 10
+
+  // Tambahkan tile OpenStreetMap
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Tambahkan marker
+  L.marker(ewindo).addTo(map)
+      .bindPopup('<b>PT EWINDO</b>') // Pop-up saat klik marker
+      .openPopup();
+</script> -->
